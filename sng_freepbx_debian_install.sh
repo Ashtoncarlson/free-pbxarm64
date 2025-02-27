@@ -1,25 +1,4 @@
 #!/bin/bash
-#####################################################################################
-# * Copyright 2024 by Sangoma Technologies
-# This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 3.0
-# of the License, or (at your option) any later version.
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# @author kgupta@sangoma.com
-#
-# This FreePBX install script and all concepts are property of
-# Sangoma Technologies.
-# This install script is free to use for installing FreePBX
-# along with dependent packages only but carries no guarantee on performance
-# and is used at your own risk.  This script carries NO WARRANTY.
-#####################################################################################
-#                                               FreePBX 17                          #
-#####################################################################################
 set -e
 SCRIPTVER="1.14"
 ASTVERSION=22
