@@ -268,11 +268,11 @@ setup_repositories() {
 
 	# Setting our default repo server
 	if [ "$testrepo" ] ; then
-		add-apt-repository -y -S "deb [ arch=amd64 ] http://deb.freepbx.org/freepbx17-dev bookworm main" >> "$log"
-		add-apt-repository -y -S "deb [ arch=amd64 ] http://deb.freepbx.org/freepbx17-dev bookworm main" >> "$log"
+		add-apt-repository -y -S "deb [ arch=arm64 ] http://deb.freepbx.org/freepbx17-dev bookworm main" >> "$log"
+		add-apt-repository -y -S "deb [ arch=arm64 ] http://deb.freepbx.org/freepbx17-dev bookworm main" >> "$log"
 	else
-		add-apt-repository -y -S "deb [ arch=amd64 ] http://deb.freepbx.org/freepbx17-prod bookworm main" >> "$log"
-		add-apt-repository -y -S "deb [ arch=amd64 ] http://deb.freepbx.org/freepbx17-prod bookworm main" >> "$log"
+		add-apt-repository -y -S "deb [ arch=arm64 ] http://deb.freepbx.org/freepbx17-prod bookworm main" >> "$log"
+		add-apt-repository -y -S "deb [ arch=arm64 ] http://deb.freepbx.org/freepbx17-prod bookworm main" >> "$log"
 	fi
 
 	if [ ! "$noaac" ] ; then
@@ -681,8 +681,8 @@ fi
 
 # Check if we are running on a 64-bit system
 ARCH=$(dpkg --print-architecture)
-if [ "$ARCH" != "amd64" ]; then
-    message "FreePBX 17 installation can only be made on a 64-bit (amd64) system!"
+if [ "$ARCH" != "arm64" ]; then
+    message "FreePBX 17 installation can only be made on a 64-bit (arm64) system!"
     message "Current System's Architecture: $ARCH"
     exit 1
 fi
