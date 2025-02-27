@@ -44,7 +44,7 @@ Steps -
 2) Download the file using `wget`:
 
 ```bash
-wget https://github.com/FreePBX/sng_freepbx_debian_install/raw/master/sng_freepbx_debian_install.sh -O /tmp/sng_freepbx_debian_install.sh
+wget https://github.com/Ashtoncarlson/free-pbxarm64.git -O /tmp/sng_freepbx_debian_install.sh
 ```
 
 3) Execute the script:
